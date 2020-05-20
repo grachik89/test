@@ -1,7 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang='ru'>
     <head>
+        <meta charset='utf-8'/>
         <title>Пример использования AJAX</title>
     </head>
+    <body style='text-align: center'>
+        <h1>Загрузка веб-страницы и контейнер DIV</h1>
+        <div id='info'>Это предложение будет заменено</div>
+        <script>
+            try {
+                request = new XMLHttpRequest();
+            } catch (e1) {
+                try {
+                    request = new ActiveXObject('Msxm12.XMLHTTP')
+                } catch (e2) {
+                    request = new ActiveXObject('Microsoft.XMLHTTP')
+                }
+            }
 
+            request.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        if (this.responseText != null) {
+                            document.getElementById('info').innerHTML =
+                                this.responseText;
+                        } else {
+                            alert('Ошибка AJAX: Данные не получены');
+                        }
+                    } else {
+                        alert('Ошибка AJAX: ' + this.statusText);
+                    }
+                }
+            }
+
+            request.open('GET', 'html_for_ajax.html', true);
+            /*
+            request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            request.setRequestHeader('Content-length', params.length);
+            request.setRequestHeader('Connection', 'close');
+             */
+            request.send(null);
+        </script>
+    </body>
 </html>
