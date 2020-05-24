@@ -4,24 +4,25 @@
     <meta charset='utf-8'/>
     <title>Foo</title>
     <style>
+        body {
+            display: ;
+        }
         #div1 {
-            border-width: 1px;
-            border-style: solid;
-            color: green;
             width: 200px;
             height: 100px;
-            padding: 10px;
+            background-color: green;
+            border-style: solid;
+            padding: 1px;
+            margin: 1px;
         }
         #div2 {
-            border-width: 1px;
-            border-style: solid;
-            color: lightblue;
             width: 200px;
             height: 100px;
+            background-color: red;
         }
     </style>
 </head>
-<body>
+<body style='width: 50%; color: gray'>
     <div id='div1'></div>
     <div id='div2'></div>
 </body>
