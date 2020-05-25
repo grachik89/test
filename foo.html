@@ -4,26 +4,37 @@
     <meta charset='utf-8'/>
     <title>Foo</title>
     <style>
-        #div1 {
+        * {
+            margin: 0;
+            border-width: 0;
+            padding: 0;
+        }
+        
+        .divs {
             width: 200px;
-            height: 101px;
-            color: green;
+            height: 100px;
+            border: solid black 1px;
+        }
+        
+        #div1 {
             background-color: green;
         }
+        
         #div2 {
-            width: 20px;
-            height: 10px;
-            color: red;
             background-color: red;
+            border-style: dashed;
+            border-color: yellow;
+            width: 190px;
+            height: 90px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <div id='div1'>
+    <div id='div1', class='divs'>
+        <div id='div2', class='divs'>
     
-    </div>
-    <div id='div2'>
-    
+        </div>
     </div>
 </body>
 </html>
