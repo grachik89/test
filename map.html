@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='utf-8'/>
+    <title>Map</title>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAxeDZQB0gsoEuwaD6rv76wq1cStQ5uh3M'></script>
+</head>
+<body>
+    <div id='message'></div>
+    
+    <div id='map'></div>
+    
+    <script>
+        function granted(position)
+        {
+    
+            message.innerHTML = 'Разрешение дано';
+            map.style.border = '1px solid black';
+            map.style.width = '640px';
+            map.style.height = '320px';
+            
+            var lat = position.coords.latitude;
+            var long = position.coords.longitude;
+            
+            var gopts = {
+                center: new google.maps.LatLng(lat, long),
+                zoom: 9,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            
+            var googleMap = new google.maps.Map(map, gopts);
+        }
+        
+        function denied(error)
+        {
+    
+            var messageText;
+            switch (error.code) {
+                case 1: {
+                    messageText = 'Доступ запрещен';
+                    break;
+                }
+                case 2: {
+                    messageText = 'Позиция недоступна';
+                    break;
+                }
+                case 3: {
+                    messageText = 'Время ожидания операции истекло';
+                    break;
+                }
+                case 4: {
+                    messageText = 'Неизвестная ошибка';
+                    break;
+                }
+            }
+    
+            message.innerHTML = messageText;
+    
+        }
+        
+        message = document.getElementById('message');
+        map = document.getElementById('map');
+        
+        if (typeof navigator.geolocation == 'undefined') {
+            alert('Геолокация не поддерживается');
+        } else {
+            navigator.geolocation.getCurrentPosition(granted, denied);
+        }
+    </script>
+</body>
+</html>

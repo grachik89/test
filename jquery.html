@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='utf-8'/>
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Сделайте на кнопках одинарный и двойной щелчок</h2>
+    <button class='myclass'>Кнопка 1</button>
+    <button class='myclass'>Кнопка 2</button>
+    <button class='myclass'>Кнопка 3</button>
+    <button class='myclass'>Кнопка 4</button>
+    <button class='myclass'>Кнопка 5</button>
+
+    <script>
+        $('.myclass').click(function () {
+            $(this).slideUp();
+        });
+    
+        $('.myclass').dblclick(function () {
+            $(this).hide();
+        });
+    </script>
+</body>
+</html>
