@@ -16,27 +16,31 @@
         }
 
         .divs {
-            border: solid black 1px;
+            width: 100px;
+            height: 100px;
         }
 
         #div1 {
+            position: relative;
             background-color: green;
-            width: 400px;
-            height: 200px;
+        }
+
+        #div3 {
+            background-color: green;
         }
         
         #div2 {
-            background-color: red;
-            width: 100px;
-            height: 50px;
             position: relative;
+            top: 10px;
+            left: 10px;
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <div id='div1', class='divs'>
-        <div id='div2', class='divs'>
-        </div>
+    <div id='div1' class='divs'>
+        <div id='div2' class='divs'></div>
     </div>
+    <div id='div3' class='divs'></div>
 </body>
 </html>
