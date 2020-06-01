@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    border-width: 0;
+    padding: 0;
+    font-family: tahoma;
+    text-transform: lowercase;
+}
+
+.relative {
+    position: relative;
+    width: 920px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    background: #efefef;
+}
+
+#header {
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    padding: 10px;
+    background: #999;
+    color: #fff;
+}
+
+#header h1 {
+    font-weight: normal;
+}
+
+#search {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#search input {
+    padding: 5px;
+}
+
+#nav {
+    position: relative;
+    height: 30px;
+    background: #ccc;
+}
+
+#nav ul li {
+    float: left;
+    /*width: 70px;*/
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    margin: 0 3px;
+    background: #ddd;
+    text-align: center;
+    list-style: none;
+}
+
+.sidebar {
+    float: right;
+    width: 200px;
+    padding: 10px;
+    background: #ebebeb;
+}
+
+.ib {
+    display: inline-block;
+    width: 70px;
+    line-height: 30px;
+    text-align: center;
+    background: #ddd;
+    border: #ccc;
+    margin: 5px;
+}
+
+.clearfloat {
+    clear: both;
+}

@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    background: lightgray;
+}
+
+#container {
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    width: 75%;
+    background: #ccc;
+}
+
+#library {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
+
+.library-item {
+    display: flex;
+    flex-flow: column;
+}
+
+.library-item > img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    order: -1;
+    align-self: center;
+}
+
+.library-item > button {
+    margin-top: auto;
+}

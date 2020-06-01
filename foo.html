@@ -3,52 +3,61 @@
 <head>
     <meta charset='utf-8'/>
     <title>Foo</title>
-    <style>
-        * {
-            margin: 0;
-            border-width: 0;
-            padding: 0;
-            font-family: tahoma;
-            text-transform: lowercase;
-        }
-
-        div {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-        }
-        
-        button {
-            width: 50px;
-            height: 50px;
-        }
-
-        .relative {
-            position: relative;
-            background-color: red;
-        }
-
-        .absolute {
-            position: absolute;
-            top: 100px;
-            left: 100px;
-            background-color: green;
-        }
-    </style>
+    <link rel='stylesheet' type='text/css' href='style.css'/>
+    <script src='script.js'></script>
 </head>
 <body>
-    <div id='element1' class='relative'>Element 1</div>
-    <div id='element2' class='relative'>
-        Element 2
-        <div class='absolute'>Element 3</div>
+    <div class='relative'>
+        <div id='header'>
+            <h1>Site Name</h1>
+            <form id='search'>
+                <input type='text' placeholder='search'/>
+            </form>
+        </div>
+        <div id='nav'>
+            <ul>
+                <li><a href='#'>Длинное слово</a></li>
+                <li><a href='#'>Очень длинное слово</a></li>
+                <li><a href='#'>Очень очень длинное слово</a></li>
+            </ul>
+        </div>
+        <div class='sidebar'>
+            <h3>Popular CSS modules</h3>
+            <p>
+                <span class='ib'>CSS Flexbox</span>
+                <span class='ib'>CSS Multi-Column</span>
+                <span class='ib'>CSS Regions</span>
+                <span class='ib'>CSS Grid Layout</span>
+                <span class='ib'>CSS Shapes</span>
+            </p>
+        </div>
+        <div id='content'>
+            <h2>Welcome to out website</h2>
+            <p>
+                текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст тексттекст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст тексттекст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст тексттекст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                текст текст текст
+            </p>
+        </div>
+        <br class='clearfloat'/>
     </div>
-    <button id='button1'>Button1</button>
-
-    <script>
-        document.getElementById('button1').onclick = function () {
-            document.getElementById('element1').style.visibility = 'hidden';
-            document.getElementById('element2').style.backgroundColor = 'yellow';
-        };
-    </script>
 </body>
 </html>
