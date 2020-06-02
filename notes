@@ -1,5 +1,65 @@
+flex
+    flex container
+        display: flex;
+            block-level
+        display: inline-flex;
+            inline-level
+        flex-direction:
+            row;
+            row-reverse;
+            column;
+            column-reverse;
+        flex-wrap:
+            nowrap;
+            wrap;
+            wrap-reverse;
+        flex-flow:
+            row wrap;
+            Комбинация flex-direction + flex-wrap
+        justify-content:
+            flex-start;
+            flex-end;
+            center;
+            space-between;
+            space-around;
+            Используется для выравнивания flex items, если в container остается
+                место, то есть если items каким-то образом ограничены в размерах.
+            Распределяет незанятое пространство.
+        align-items
+        align-content
+
+
+
+
+    flex items
+        Может иметь любый из доступных типов display
+        Если использовать для него position: absolute или fixed и присвоить
+            top, bottom, left, right значения не auto, то он удалется из контекста flex
+        order:
+            Сортировка внутри flex container вдоль main axis.
+            Любые целые числа, в том числе отрицательные.
+        flex-grow:
+            Коэффициент свободного пространства, занимаего элементом по отношению
+                к другим при появлении этого пространства
+        flex-shrink:
+            Коэффициент пространства, освобождаемого элементом по отношению
+                к другим при возникновении такой необходимости
+        flex-basis:
+            Изначальная ширина элемента. Если имеет значение auto, то ширина
+                вычисляется исходя из содержимого.
+            Если имеет положительное значение или auto, то в качестве основы для
+                flex-grow и flex-shrink берется пространство внутри элемента вокруг
+                его содержимого. Если имеет значение 0, то за основу берется вся ширина
+                элемента.
+        flex:
+            1 1 auto
+            Комбинация flex-grow + flex-shrink + flex-basis
+        align-self
+
+
+
+
 multicol
-    Контейнер div внутри body, возможно лишний, и все свойства можно применить к body.
     header
         hgroup
             Замена div внутри header для его разделения на секции. Статус не определен,
