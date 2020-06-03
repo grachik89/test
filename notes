@@ -22,11 +22,42 @@ flex
             center;
             space-between;
             space-around;
+            Работает только по основной оси.
             Используется для выравнивания flex items, если в container остается
                 место, то есть если items каким-то образом ограничены в размерах.
-            Распределяет незанятое пространство.
+            Распределяет незанятое items пространство.
         align-items
+            flex-start;
+            flex-end;
+            center;
+            baseline;
+            stretch;
+            auto;
+            Есть свойство, работающее аналогично, но применяемое к отдельным items:
+                align-self
         align-content
+            flex-start;
+            flex-end;
+            center;
+            space-between;
+            space-around;
+            stretch;
+
+
+
+    Выравнивание
+        flex-container
+            По основной оси
+                margin
+                justify-content
+            По пересекающей оси
+                align-items
+                С включенным wrap или wrap-reverse
+                    align-content
+        flex-items
+            По пересекающей оси
+                align-self
+
 
 
 
@@ -52,7 +83,7 @@ flex
                 его содержимого. Если имеет значение 0, то за основу берется вся ширина
                 элемента.
         flex:
-            1 1 auto
+            1 1 auto;
             Комбинация flex-grow + flex-shrink + flex-basis
         align-self
 
