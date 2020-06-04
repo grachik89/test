@@ -7,15 +7,21 @@
 </head>
 <body>
     <div id='container'>
-        <div id='flex_container'>
+        <aside>
+            <div><a href='#'>Главная</a></div>
+            <div><a href='#'>Каталог</a></div>
+            <div><a href='#'>Доставка</a></div>
+            <div><a href='#'>О нас</a></div>
+        </aside>
+        <section>
             <?php for ($i = 1; $i <= 30; $i ++) :?>
-                <div class='flex_item'>
+                <div>
                     <h2>Товар<?php echo $i;?></h2>
                     <h3>Производитель<?php echo $i;?></h3>
                     <img src='images/article.jpg'/>
                 </div>
             <?php endfor;?>
-        </div>
+        </section>
     </div>
 </body>
 </html>

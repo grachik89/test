@@ -10,34 +10,57 @@ body {
 }
 
 #container {
-    box-sizing: border-box;
     margin: 0 auto;
     padding: 15px;
     max-width: 1200px;
     background-color: white;
-}
-
-#product_list {
-
-    max-width: 900px;
-    background-color: black;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
 }
 
-#product_list {
-
-    max-width: 900px;
-    background-color: black;
+aside {
+    flex: 0 1 300px;
+    background-color: lightblue;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
 }
 
-.flex_item {
+aside > div {
+    flex: 0 1 50px;
+    background-color: inherit;
+    font-size: 20pt;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+aside > div:hover {
+     background-color: white;
+}
+
+aside > div * {
+    align-self: center;
+}
+
+section {
+    flex: 0 3 900px;
     background-color: lightgreen;
-    flex: 0 0 280px;
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.flex_item img {
+section > div {
+    flex: 1 0 300px;
+    background-color: inherit;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+section > div * {
+    align-self: center;
+}
+
+section img {
     width: 100%;
 }
