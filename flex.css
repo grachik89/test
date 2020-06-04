@@ -10,11 +10,24 @@ body {
 }
 
 #container {
-    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1200px;
     background-color: white;
 }
 
-#flex_container {
+#product_list {
+
+    max-width: 900px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#product_list {
+
+    max-width: 900px;
     background-color: black;
     display: flex;
     flex-flow: row wrap;
