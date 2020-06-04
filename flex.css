@@ -11,35 +11,18 @@ body {
 
 #container {
     width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
     background-color: white;
 }
 
 #flex_container {
-    /*
-    width: 868px;
-     */
-    border: 1px solid white;
-    margin-left: auto;
     background-color: black;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
 }
 
 .flex_item {
-    margin: 15px;
-    background-color: white;
-    flex: 0 0 230px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.flex_item * {
-    align-self: center;
+    background-color: lightgreen;
+    flex: 0 0 280px;
 }
 
 .flex_item img {
