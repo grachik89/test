@@ -1,3 +1,20 @@
+grid
+    grid container
+    grid item
+        Счет идет не в самих столбцах и строках, а в линиях перед ними
+        grid-row-start
+        grid-row-end
+        grid-row
+            Сокращение для grid-row-start и grid-row-end
+        grid-column-start
+        grid-column-end
+        grid-column
+            Сокращение для grid-column-start и grid-column-end
+        grid-area
+            Альтернатива использованию grid-row и grid-column
+
+
+
 flex
     flex container
         display:
@@ -43,9 +60,6 @@ flex
             space-between;
             space-around;
             stretch;
-
-
-
     Выравнивание
         flex-container
             По основной оси
@@ -60,11 +74,6 @@ flex
         flex-items
             По пересекающей оси
                 align-self
-
-
-
-
-
     flex items
         Может иметь любый из доступных типов display
         Если использовать для него position: absolute или fixed и присвоить
@@ -92,10 +101,6 @@ flex
             1 1 auto;
             Комбинация flex-grow + flex-shrink + flex-basis
         align-self
-
-
-
-
 multicol
     header
         hgroup
@@ -117,7 +122,3 @@ multicol
                     Статья для чтения
             aside
                 Вертикальное меню, sidebar
-
-
-
-
