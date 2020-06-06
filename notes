@@ -1,7 +1,29 @@
 grid
+    Explicit Grid
+    Implicit Grid
+    Responsive
+        Нужно использовать auto-fill или auto-fit
+            Используются только внутри repeat
+        auto-fill
+        auto-fit
+            Удаляет незаполненные tracks
     grid container
+        grid-template-rows:
+            Явное описание строк (explicit)
+        grid-auto-rows:
+            Описание параметров автоматического создания строк (implicit)
+        grid-template-columns:
+            Явное описание столбцов (explicit)
+        grid-auto-columns:
+            Описание параметров автоматического создания столбцов (implicit)
+        grid-auto-flow:
+            Направление автоматического заполнения ячеек
+            row
+            column
+
     grid item
         Счет идет не в самих столбцах и строках, а в линиях перед ними
+        -1 - последняя линия
         grid-row-start
         grid-row-end
         grid-row
