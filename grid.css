@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 1200px;
+    background-color: lightgreen;
+
+    display: grid;
+    grid-template-rows: 25px 50px 25px 100px 100px 100px;
+}
