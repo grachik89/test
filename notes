@@ -1,6 +1,10 @@
 grid
     Explicit Grid
+        grid-template-columns и grid-template-rows
     Implicit Grid
+        Строки и столбцы создаются автоматически.
+        Параметрами этого можно управлять с помощью свойств:
+            grid-auto-rows и grid-auto-columns
     Responsive
         Нужно использовать auto-fill или auto-fit
             Используются только внутри repeat
