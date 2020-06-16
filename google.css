@@ -1,18 +1,16 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     border: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial;
-    font-size: 13px;
 }
 
-nav > a {
-    color: black;
+a {
     text-decoration: none;
 }
 
-nav > a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -28,17 +26,24 @@ header {
 
     display: flex;
     justify-content: flex-end;
+
+    padding: 15px 30px;
 }
 
-#nav1 {
+nav {
     flex: 0 1 auto;
 
     display: flex;
     align-items: center;
+
+    color: black;
+    font-size: 13px;
 }
 
-#nav1 > a {
-    margin-left: 15px;
+nav > a {
+    padding-left: 15px;
+
+    color: rgba(0, 0, 0, .87);
 }
 
 section {
@@ -47,52 +52,91 @@ section {
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
+}
+
+section h1 {
+    font-size: 90px;
+    color: blue;
+}
+
+section input {
+    margin: 30px 0 0 0;
+    height: 50px;
+    width: 500px;
+    border: #e4e4e4 solid 1px;
+    border-radius: 50px;
+}
+
+#section_div2 {
+    margin: 30px 0 0 0;
+
+    display: flex;
+}
+
+section h6 {
+    margin: 30px 0 0 0;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+section button {
+    flex: 0 0 auto;
+
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 14px;
 }
 
 footer {
     flex: 0 0 auto;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 0 30px;
+    background-color: #f2f2f2;
 }
 
 footer > div {
-    flex: 0 0 40px;
-
-    padding: 0 30px;
-    border-top: black solid 1px;
-    font-size: 14px;
-
-    display: flex;
-}
-
-div > nav {
-    flex: 1 1 auto;
-
     display: flex;
     align-items: center;
-}
 
-nav a, nav span {
+    height: 40px;
+    border-top: #e4e4e4 solid 1px;
     color: #5f6368;
 }
 
-#nav2 {
-    justify-content: flex-start;
+footer a {
+    color: #5f6368;
 }
 
-#nav3 {
-    justify-content: flex-start;
+footer span {
+    color: rgba(0, 0, 0, .54);
 }
 
-#nav3 > a {
-    margin-right: 15px;
+#footer_div1 {
+    grid-column: 1 / -1;
+
+    font-size: 15px;
 }
 
-#nav4 {
+#footer_div2 {
+    font-size: 14px;
+}
+
+#footer_div2 > a {
+    padding-right: 27px;
+}
+
+#footer_div3 {
     justify-content: flex-end;
+
+    font-size: 14px;
 }
 
-#nav4 > a {
-    margin-left: 15px;
+#footer_div3 > a {
+    padding-left: 27px;
 }
