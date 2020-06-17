@@ -93,10 +93,10 @@ section button {
 footer {
     flex: 0 0 auto;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-    padding: 0 30px;
+    display: flex;
+    flex-flow: column;
+
     background-color: #f2f2f2;
 }
 
@@ -104,7 +104,7 @@ footer > div {
     display: flex;
     align-items: center;
 
-    height: 40px;
+    padding: 0 30px;
     border-top: #e4e4e4 solid 1px;
     color: #5f6368;
 }
@@ -118,25 +118,39 @@ footer span {
 }
 
 #footer_div1 {
-    grid-column: 1 / -1;
-
+    height: 40px;
     font-size: 15px;
 }
 
 #footer_div2 {
-    font-size: 14px;
-}
-
-#footer_div2 > a {
-    padding-right: 27px;
+    flex-flow: wrap;
 }
 
 #footer_div3 {
-    justify-content: flex-end;
+    flex: 1 0 auto;
 
+    display: flex;
+    align-items: center;
+
+    height: 40px;
     font-size: 14px;
 }
 
 #footer_div3 > a {
+    padding-right: 27px;
+}
+
+#footer_div4 {
+    flex: 1 0 auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 40px;
+    font-size: 14px;
+}
+
+#footer_div4 > a {
     padding-left: 27px;
 }
